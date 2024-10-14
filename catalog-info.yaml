@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: hello4
+  annotations:
+    'backstage.io/kubernetes-id': helloworld2
+    # 'backstage.io/kubernetes-label-selector': 'app=helloworld'
+    'backstage.io/kubernetes-namespace': backstage-test
+spec:
+  type: service
+  lifecycle: production
+  owner: guest
